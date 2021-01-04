@@ -52,7 +52,7 @@ namespace ProductManagment.Controllers
             if (ModelState.IsValid)
             {
                 db.ProductLists.Add(productList);
-                db.SaveChanges();
+                _ = db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
