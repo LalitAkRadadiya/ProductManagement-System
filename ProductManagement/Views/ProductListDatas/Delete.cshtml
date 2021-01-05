@@ -64,7 +64,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Small_image)
+            <img src="@Url.Content(Model.Small_image)" height="100" width="100" />
         </dd>
 
         <dt>
@@ -72,7 +72,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Large_image)
+            <img src="@Url.Content(Model.Large_image)" height="100" width="100" />
         </dd>
 
     </dl>

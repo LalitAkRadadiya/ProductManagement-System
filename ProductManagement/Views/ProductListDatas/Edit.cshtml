@@ -68,15 +68,15 @@
             @Html.LabelFor(model => model.Small_image, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
 
-                <input type="submit" value="Create" class="btn btn-default" />
+                <img src="@Url.Content(Model.Small_image)" height="100" width="100" />
+
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Large_image, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-
-                <input type="submit" value="Create" class="btn btn-default" />
+                <img src="@Url.Content(Model.Large_image)" height="100" width="100" />
             </div>
         </div>
 
