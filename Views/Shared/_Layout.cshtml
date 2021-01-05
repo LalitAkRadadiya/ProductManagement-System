@@ -26,14 +26,14 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <span> @Html.ActionLink("Product List", "Index", "ProductLists")</span>
-                    <span>
+                    <span style="padding:0 10px"> @Html.ActionLink("Product List", "Index", "ProductLists")</span>
+                    <span style="padding:0 10px">
                         @Html.ActionLink("Create", "Create", "ProductLists")
                     </span>
-                    <span>
+                    <span style="padding:0 10px">
                         <a style="color:white"> Dear : @User.Identity.Name</a>
                     </span>
-                    <span>
+                    <span style="padding:0 10px">
                         @Html.ActionLink("Logout", "Logout", "Account")
                     </span>
                 }
