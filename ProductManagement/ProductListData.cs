@@ -11,7 +11,8 @@ namespace ProductManagement
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+    using System.Web;
     public partial class ProductListData
     {
         public int Id { get; set; }
@@ -21,7 +22,9 @@ namespace ProductManagement
         public Nullable<int> Quantity { get; set; }
         public string Short_Description { get; set; }
         public string Long_Description { get; set; }
+        [DisplayName("Upload File")]
         public string Small_image { get; set; }
+        public HttpPostedFileBase Small_ImageFile { get; set; }
         public string Large_image { get; set; }
     }
 }

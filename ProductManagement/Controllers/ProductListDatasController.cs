@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ProductManagement;
+using ProductManagement.Models;
 
 namespace ProductManagement.Controllers
 {
@@ -15,6 +18,20 @@ namespace ProductManagement.Controllers
     {
         private ProductDatabaseEntities db = new ProductDatabaseEntities();
 
+        [HttpGet]
+        public ActionResult Add()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Add(Image imageModel)
+        {
+            string filename = DateTime.Now.ToString("yymmssfff");
+            string extension = ".png";
+            filename = filename + extension;
+            
+            return View();
+        }
         // GET: ProductListDatas
         public ActionResult Index()
         {
