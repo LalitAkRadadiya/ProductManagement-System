@@ -26,7 +26,9 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    
+                <span style="padding:0 10px">
+                    @Html.ActionLink("Product List", "Index", "")
+                </span>
                     <span style="padding:0 10px">
                         <a style="color:white"> Dear : @User.Identity.Name</a>
                     </span>

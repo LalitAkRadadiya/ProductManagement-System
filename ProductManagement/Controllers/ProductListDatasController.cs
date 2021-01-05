@@ -11,6 +11,7 @@ using System.Web.Mvc;
 using ProductManagement;
 using ProductManagement.Models;
 
+
 namespace ProductManagement.Controllers
 {
     [Authorize]
@@ -18,6 +19,7 @@ namespace ProductManagement.Controllers
     {
         private ProductDatabaseEntities db = new ProductDatabaseEntities();
 
+        
         [HttpGet]
         public ActionResult Add()
         {

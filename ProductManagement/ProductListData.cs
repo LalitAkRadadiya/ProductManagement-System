@@ -24,7 +24,10 @@ namespace ProductManagement
         public string Long_Description { get; set; }
         [DisplayName("Upload File")]
         public string Small_image { get; set; }
-        public HttpPostedFileBase Small_ImageFile { get; set; }
+        public HttpPostedFileBase ImageFile { get; set; }
+        [DisplayName("Upload File")]
         public string Large_image { get; set; }
+
+        public HttpPostedFileBase Large_ImageFile { get; set; }
     }
 }

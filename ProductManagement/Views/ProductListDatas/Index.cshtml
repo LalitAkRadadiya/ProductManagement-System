@@ -105,10 +105,10 @@
                 @Html.DisplayFor(modelItem => item.Long_Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Small_image)
+                <img src="@Url.Content(item.Small_image)" height="100" width="100" />
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Large_image)
+                <img src="@Url.Content(item.Large_image)" height="100" width="100" />
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
